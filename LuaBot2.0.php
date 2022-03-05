@@ -1,5 +1,14 @@
 <?php
-$data = json_decode(file_get_contents('php://input'), true);
+$request = new HttpRequest();
+$request->setUrl('http://v4.chatpro.com.br/chatpro-lf37t5d95b/api/v1/send_message');
+$request->setMethod(HTTP_METH_POST);
+
+$request->setHeaders(array(
+  'cache-control' => 'no-cache',
+  'Authorization' => 'u98mxxn9n5rp0wdqtvdjp5dphdp683'
+
+
+));
 
 //ESTOU RECEBENDO A MENSAGEM E A MENSAGEM É DO TIPO CHAT
 if( ($data['messages'][0]['fromMe'] === false) && ($data['messages'][0]['type'] == "chat") ) {
