@@ -2,5 +2,24 @@
   "dependencies": {
     "express": "^4.17.3",
     "expresss": "^0.0.0"
-  }
+  },
+  "name": "luabot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app" ,
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srnekoo/luabot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srnekoo/luabot/issues"
+  },
+  "homepage": "https://github.com/srnekoo/luabot#readme",
+  "description": ""
 }
